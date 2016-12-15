@@ -1,0 +1,24 @@
+{
+  "name": "react-emojione",
+  "version": "1.0.0",
+  "description": "Emoji menu with React and emojione",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anchorchat/react-emojione.git"
+  },
+  "keywords": [
+    "react",
+    "emoji",
+    "emojione"
+  ],
+  "author": "Sjaak Luthart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anchorchat/react-emojione/issues"
+  },
+  "homepage": "https://github.com/anchorchat/react-emojione#readme"
+}
