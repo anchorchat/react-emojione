@@ -1,0 +1,22 @@
+.demo {
+  padding: 2rem;
+}
+
+.demo h1 {
+  font-size: 1rem;
+}
+
+.demo > h1 {
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #ededed;
+  margin: 20px 0;
+}
+
+.demo > h1 a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.demo > h1:hover a {
+  text-decoration: underline;
+}
