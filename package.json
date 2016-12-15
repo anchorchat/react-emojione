@@ -2,7 +2,10 @@
   "name": "react-emojione",
   "version": "1.0.0",
   "description": "Emoji menu with React and emojione",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "babel -d dist/ -w src/",
