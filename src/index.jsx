@@ -4,9 +4,9 @@ import _ from 'underscore';
 import emojiList from './emoji';
 
 class EmojiMenu extends Component {
-  static createMarkup(emoji) {
+  static createMarkup(shortname) {
     return {
-      __html: emojione.toImage(emoji)
+      __html: emojione.toImage(shortname)
     };
   }
 
