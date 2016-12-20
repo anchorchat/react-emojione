@@ -48,53 +48,48 @@ class EmojiMenu extends Component {
 
     const modifiers = _.where(emojiList, { category: 'modifier' });
 
-    const style = {
-      modifierTone0: {
-        backgroundColor: '#ffdd67',
-        borderRadius: '50%'
-      }
-    };
-
     return (
-      <section>
+      <section className="emoji-menu">
         <header className="emoji-container modifiers">
-          <div
-            style={style.modifierTone0}
-            className="emojione modifier"
-            onClick={() => this.changeTone('tone0')}
-          />
+          <div className="modifier" onClick={() => this.changeTone('tone0')}>
+            <svg width="50px" height="50px" viewBox="0 0 50 50" className="emojione">
+              <circle id="circle" fill="#FFDD67" cx="25" cy="25" r="25" />
+            </svg>
+          </div>
           {_.map(modifiers, modifier => (
             <div
-              className="emojione modifier"
+              className="modifier"
               dangerouslySetInnerHTML={EmojiMenu.createMarkup(modifier.shortname)}
               key={`emoji-${modifier.shortname}`}
               onClick={() => this.changeTone(modifier.title)}
             />
           ))}
         </header>
-        {_.map(categories, (category) => {
-          const categoryEmoji = _.chain(emojiList).where({ category }).filter((emoji) => {
-            if (emoji.title.includes('tone')) {
-              return emoji.title.includes(tone);
-            }
+        <section className="emoji-categories">
+          {_.map(categories, (category) => {
+            const categoryEmoji = _.chain(emojiList).where({ category }).filter((emoji) => {
+              if (emoji.title.includes('tone')) {
+                return emoji.title.includes(tone);
+              }
 
-            return true;
-          }).value();
-          return (
-            <article key={category}>
-              <h1>{category}</h1>
-              <section className="emoji-container">
-                {_.map(categoryEmoji, emoji => (
-                  <div
-                    className={`emojione ${category}`}
-                    dangerouslySetInnerHTML={EmojiMenu.createMarkup(emoji.shortname)}
-                    key={`emoji-${emoji.shortname}`}
-                  />
-                ))}
-              </section>
-            </article>
-          );
-        })}
+              return true;
+            }).value();
+            return (
+              <article key={category}>
+                <h1>{category}</h1>
+                <section className="emoji-container">
+                  {_.map(categoryEmoji, emoji => (
+                    <div
+                      className={category}
+                      dangerouslySetInnerHTML={EmojiMenu.createMarkup(emoji.shortname)}
+                      key={`emoji-${emoji.shortname}`}
+                    />
+                  ))}
+                </section>
+              </article>
+            );
+          })}
+        </section>
       </section>
     );
   }
