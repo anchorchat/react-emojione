@@ -355,7 +355,7 @@ const emoji = [
   category: 'people',
   keywords: [ 'sad', 'smiley', 'cry', 'emotion', 'heartbreak' ] }
 ,
-{ title: 'frowning_tone0',
+{ title: 'frowning',
   name: 'frowning face with open mouth',
   shortname: ':frowning:',
   category: 'people',
