@@ -11,15 +11,17 @@ class EmojiMenu extends Component {
   }
 
   static propTypes = {
-    svgSprites: PropTypes.string.isRequired
+    svgSprites: PropTypes.string
   }
 
   constructor(props) {
     super(props);
 
-    emojione.imageType = 'svg';
-    emojione.sprites = true;
-    emojione.imagePathSVGSprites = props.svgSprites;
+    if (props.svgSprites) {
+      emojione.imageType = 'svg';
+      emojione.sprites = true;
+      emojione.imagePathSVGSprites = props.svgSprites;
+    }
 
     this.state = {
       tone: 'tone0'
