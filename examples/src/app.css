@@ -20,3 +20,15 @@
 .demo > h1:hover a {
   text-decoration: underline;
 }
+
+.emojione {
+  width: 40px;
+  height: 40px;
+}
+
+.emoji-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
