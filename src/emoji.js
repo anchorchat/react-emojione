@@ -8729,7 +8729,7 @@ const emoji = [
   category: 'symbols',
   keywords: [ 'object', 'symbol' ] }
 ,
-{ title: 'o_tone0',
+{ title: 'o',
   name: 'heavy large circle',
   shortname: ':o:',
   category: 'symbols',
@@ -8987,7 +8987,7 @@ const emoji = [
   category: 'symbols',
   keywords: [ 'symbol' ] }
 ,
-{ title: 'a_tone0',
+{ title: 'a',
   name: 'negative squared latin capital letter a',
   shortname: ':a:',
   category: 'symbols',
@@ -9035,7 +9035,7 @@ const emoji = [
   category: 'symbols',
   keywords: [ 'symbol' ] }
 ,
-{ title: 'm_tone0',
+{ title: 'm',
   name: 'circled latin capital letter m',
   shortname: ':m:',
   category: 'symbols',
@@ -9047,7 +9047,7 @@ const emoji = [
   category: 'symbols',
   keywords: [ 'symbol' ] }
 ,
-{ title: 'ng_tone0',
+{ title: 'ng',
   name: 'squared ng',
   shortname: ':ng:',
   category: 'symbols',
@@ -9077,7 +9077,7 @@ const emoji = [
   category: 'symbols',
   keywords: [ 'symbol' ] }
 ,
-{ title: 'up_tone0',
+{ title: 'up',
   name: 'squared up with exclamation mark',
   shortname: ':up:',
   category: 'symbols',
