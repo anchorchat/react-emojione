@@ -23,17 +23,26 @@ class EmojiMenu extends Component {
   }
 
   render() {
-    const categories = _.chain(emojiList).pluck('category').uniq().value();
+    const categories = [
+      'people',
+      'nature',
+      'food',
+      'activity',
+      'travel',
+      'objects',
+      'flags',
+      'symbols'
+    ];
 
     return (
       <section>
-        {categories.map((category) => {
+        {_.map(categories, (category) => {
           const categoryEmoji = _.where(emojiList, { category });
           return (
             <article key={category}>
               <h1>{category}</h1>
               <section className="emoji-container">
-                {categoryEmoji.map(emoji => (
+                {_.map(categoryEmoji, emoji => (
                   <div
                     className={`emojione ${category}`}
                     dangerouslySetInnerHTML={EmojiMenu.createMarkup(emoji.shortname)}
