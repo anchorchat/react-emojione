@@ -14,7 +14,7 @@ function App() {
           React EmojiOne
         </a>
       </h1>
-      <EmojiMenu />
+      <EmojiMenu svgSprites="/emojione.svg" />
     </section>
   );
 }
