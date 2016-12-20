@@ -1,15 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import emojione from 'emojione';
 import _ from 'underscore';
-import emojiList from './emoji';
+import emojis from './emoji';
+import createMarkup from './create-markup';
+import EmojiCategory from './emoji-category';
 
 class EmojiMenu extends Component {
-  static createMarkup(shortname) {
-    return {
-      __html: emojione.toImage(shortname)
-    };
-  }
-
   static propTypes = {
     svgSprites: PropTypes.string,
     sendEmoji: PropTypes.func.isRequired
@@ -50,7 +46,7 @@ class EmojiMenu extends Component {
       'symbols'
     ];
 
-    const modifiers = _.where(emojiList, { category: 'modifier' });
+    const modifiers = _.where(emojis, { category: 'modifier' });
 
     return (
       <section className="emoji-menu">
@@ -63,7 +59,7 @@ class EmojiMenu extends Component {
           {_.map(modifiers, modifier => (
             <div
               className="modifier"
-              dangerouslySetInnerHTML={EmojiMenu.createMarkup(modifier.shortname)}
+              dangerouslySetInnerHTML={createMarkup(modifier.shortname)}
               key={`emoji-${modifier.shortname}`}
               onClick={() => this.changeTone(modifier.title)}
             />
@@ -71,7 +67,7 @@ class EmojiMenu extends Component {
         </header>
         <section className="emoji-categories">
           {_.map(categories, (category) => {
-            const categoryEmoji = _.chain(emojiList).where({ category }).filter((emoji) => {
+            const filteredEmoji = _.chain(emojis).where({ category }).filter((emoji) => {
               if (emoji.title.includes('tone')) {
                 return emoji.title.includes(tone);
               }
@@ -79,19 +75,12 @@ class EmojiMenu extends Component {
               return true;
             }).value();
             return (
-              <article key={category}>
-                <h1>{category}</h1>
-                <section className="emoji-container">
-                  {_.map(categoryEmoji, emoji => (
-                    <div
-                      className={category}
-                      dangerouslySetInnerHTML={EmojiMenu.createMarkup(emoji.shortname)}
-                      key={`emoji-${emoji.shortname}`}
-                      onClick={() => sendEmoji(emoji)}
-                    />
-                  ))}
-                </section>
-              </article>
+              <EmojiCategory
+                key={category}
+                emojis={filteredEmoji}
+                category={category}
+                sendEmoji={sendEmoji}
+              />
             );
           })}
         </section>
