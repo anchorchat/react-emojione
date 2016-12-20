@@ -22,8 +22,9 @@
 }
 
 .emojione {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
   cursor: pointer;
 }
 
@@ -32,4 +33,36 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.emoji-menu {
+  height: 250px;
+  overflow: hidden;
+}
+
+.emoji-categories {
+  height: calc(100% - 50px);
+  overflow-y: scroll;
+}
+
+.emoji-container > div {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+.emoji-container.modifiers {
+  display: block;
+  text-align: right;
+}
+
+.emoji-container.modifiers > div {
+  display: inline-block;
+}
+
+article h1 {
+  margin: 0 0 5px 10px;
+  padding-bottom: 5px;
+  text-transform: capitalize;
+  border-bottom: 1px solid #ededed;
 }
