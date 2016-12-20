@@ -66,3 +66,11 @@ article h1 {
   text-transform: capitalize;
   border-bottom: 1px solid #ededed;
 }
+
+.emoji-categories article {
+  margin-bottom: 10px;
+}
+
+.emoji-categories article:last-of-type {
+  margin-bottom: 0;
+}
