@@ -2,3 +2,4 @@
 **/*.tests.*
 dist
 test
+emoji.js
