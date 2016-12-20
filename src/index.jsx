@@ -2,8 +2,8 @@ import React, { Component, PropTypes } from 'react';
 import emojione from 'emojione';
 import _ from 'underscore';
 import emojis from './emoji';
-import createMarkup from './create-markup';
 import EmojiCategory from './emoji-category';
+import EmojiModifiers from './emoji-modifiers';
 
 class EmojiMenu extends Component {
   static propTypes = {
@@ -23,6 +23,8 @@ class EmojiMenu extends Component {
     this.state = {
       tone: 'tone0'
     };
+
+    this.changeTone = this.changeTone.bind(this);
   }
 
   changeTone(tone) {
@@ -50,21 +52,7 @@ class EmojiMenu extends Component {
 
     return (
       <section className="emoji-menu">
-        <header className="emoji-container modifiers">
-          <div className="modifier" onClick={() => this.changeTone('tone0')}>
-            <svg width="50px" height="50px" viewBox="0 0 50 50" className="emojione">
-              <circle id="circle" fill="#FFDD67" cx="25" cy="25" r="25" />
-            </svg>
-          </div>
-          {_.map(modifiers, modifier => (
-            <div
-              className="modifier"
-              dangerouslySetInnerHTML={createMarkup(modifier.shortname)}
-              key={`emoji-${modifier.shortname}`}
-              onClick={() => this.changeTone(modifier.title)}
-            />
-          ))}
-        </header>
+        <EmojiModifiers modifiers={modifiers} changeTone={this.changeTone} tone={tone} />
         <section className="emoji-categories">
           {_.map(categories, (category) => {
             const filteredEmoji = _.chain(emojis).where({ category }).filter((emoji) => {
@@ -74,6 +62,7 @@ class EmojiMenu extends Component {
 
               return true;
             }).value();
+
             return (
               <EmojiCategory
                 key={category}
