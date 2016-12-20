@@ -20,9 +20,21 @@ class EmojiMenu extends Component {
     emojione.imageType = 'svg';
     emojione.sprites = true;
     emojione.imagePathSVGSprites = props.svgSprites;
+
+    this.state = {
+      tone: 'tone0'
+    };
+  }
+
+  changeTone(tone) {
+    this.setState({
+      tone
+    });
   }
 
   render() {
+    const { tone } = this.state;
+
     const categories = [
       'people',
       'nature',
@@ -34,10 +46,28 @@ class EmojiMenu extends Component {
       'symbols'
     ];
 
+    const modifiers = _.where(emojiList, { category: 'modifier' });
+
     return (
       <section>
+        <header className="emoji-container modifiers">
+          {_.map(modifiers, modifier => (
+            <div
+              className={'emojione modifier'}
+              dangerouslySetInnerHTML={EmojiMenu.createMarkup(modifier.shortname)}
+              key={`emoji-${modifier.shortname}`}
+              onClick={() => this.changeTone(modifier.title)}
+            />
+          ))}
+        </header>
         {_.map(categories, (category) => {
-          const categoryEmoji = _.where(emojiList, { category });
+          const categoryEmoji = _.chain(emojiList).where({ category }).filter((emoji) => {
+            if (emoji.title.includes('tone')) {
+              return emoji.title.includes(tone);
+            }
+
+            return true;
+          }).value();
           return (
             <article key={category}>
               <h1>{category}</h1>
