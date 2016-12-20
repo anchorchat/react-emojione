@@ -55,6 +55,7 @@
     "react": "^15.4.1"
   },
   "dependencies": {
-    "emojione": "^2.2.7"
+    "emojione": "^2.2.7",
+    "underscore": "^1.8.3"
   }
 }
