@@ -38,11 +38,15 @@
 .emoji-menu {
   height: 250px;
   overflow: hidden;
+  background: #F9F7F7;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
 }
 
 .emoji-categories {
-  height: calc(100% - 50px);
+  height: calc(100% - 60px);
   overflow-y: scroll;
+  padding-top: 10px;
 }
 
 .emoji-container > div {
@@ -64,7 +68,6 @@ article h1 {
   margin: 0 0 5px 10px;
   padding-bottom: 5px;
   text-transform: capitalize;
-  border-bottom: 1px solid #ededed;
 }
 
 .emoji-categories article {
@@ -73,4 +76,13 @@ article h1 {
 
 .emoji-categories article:last-of-type {
   margin-bottom: 0;
+}
+
+.demo > div .emojione {
+  width: 150px;
+  height: 150px;
+}
+
+.modifiers {
+  background: #fff;
 }
