@@ -355,7 +355,7 @@ const emoji = [
   category: 'people',
   keywords: [ 'sad', 'smiley', 'cry', 'emotion', 'heartbreak' ] }
 ,
-{ title: 'frowning',
+{ title: 'frowning_tone0',
   name: 'frowning face with open mouth',
   shortname: ':frowning:',
   category: 'people',
@@ -613,7 +613,7 @@ const emoji = [
   category: 'nature',
   keywords: [ 'animal' ] }
 ,
-{ title: 'boy',
+{ title: 'boy_tone0',
   name: 'boy',
   shortname: ':boy:',
   category: 'people',
@@ -649,7 +649,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'girl',
+{ title: 'girl_tone0',
   name: 'girl',
   shortname: ':girl:',
   category: 'people',
@@ -685,7 +685,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'man',
+{ title: 'man_tone0',
   name: 'man',
   shortname: ':man:',
   category: 'people',
@@ -721,7 +721,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'woman',
+{ title: 'woman_tone0',
   name: 'woman',
   shortname: ':woman:',
   category: 'people',
@@ -764,7 +764,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'older_man',
+{ title: 'older_man_tone0',
   name: 'older man',
   shortname: ':older_man:',
   category: 'people',
@@ -800,7 +800,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'older_woman',
+{ title: 'older_woman_tone0',
   name: 'older woman',
   shortname: ':older_woman:',
   category: 'people',
@@ -836,7 +836,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'baby',
+{ title: 'baby_tone0',
   name: 'baby',
   shortname: ':baby:',
   category: 'people',
@@ -872,7 +872,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'angel',
+{ title: 'angel_tone0',
   name: 'baby angel',
   shortname: ':angel:',
   category: 'people',
@@ -908,7 +908,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'cop',
+{ title: 'cop_tone0',
   name: 'police officer',
   shortname: ':cop:',
   category: 'people',
@@ -944,7 +944,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'spy',
+{ title: 'spy_tone0',
   name: 'sleuth or spy',
   shortname: ':spy:',
   category: 'people',
@@ -980,7 +980,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'guardsman',
+{ title: 'guardsman_tone0',
   name: 'guardsman',
   shortname: ':guardsman:',
   category: 'people',
@@ -1016,7 +1016,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'construction_worker',
+{ title: 'construction_worker_tone0',
   name: 'construction worker',
   shortname: ':construction_worker:',
   category: 'people',
@@ -1052,7 +1052,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'man_with_turban',
+{ title: 'man_with_turban_tone0',
   name: 'man with turban',
   shortname: ':man_with_turban:',
   category: 'people',
@@ -1088,7 +1088,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'person_with_blond_hair',
+{ title: 'person_with_blond_hair_tone0',
   name: 'person with blond hair',
   shortname: ':person_with_blond_hair:',
   category: 'people',
@@ -1124,7 +1124,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'santa',
+{ title: 'santa_tone0',
   name: 'father christmas',
   shortname: ':santa:',
   category: 'people',
@@ -1167,7 +1167,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'mrs_claus',
+{ title: 'mrs_claus_tone0',
   name: 'mother christmas',
   shortname: ':mrs_claus:',
   category: 'people',
@@ -1203,7 +1203,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'princess',
+{ title: 'princess_tone0',
   name: 'princess',
   shortname: ':princess:',
   category: 'people',
@@ -1239,7 +1239,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'prince',
+{ title: 'prince_tone0',
   name: 'prince',
   shortname: ':prince:',
   category: 'people',
@@ -1275,7 +1275,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'bride_with_veil',
+{ title: 'bride_with_veil_tone0',
   name: 'bride with veil',
   shortname: ':bride_with_veil:',
   category: 'people',
@@ -1311,7 +1311,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'man_in_tuxedo',
+{ title: 'man_in_tuxedo_tone0',
   name: 'man in tuxedo',
   shortname: ':man_in_tuxedo:',
   category: 'people',
@@ -1347,7 +1347,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'pregnant_woman',
+{ title: 'pregnant_woman_tone0',
   name: 'pregnant woman',
   shortname: ':pregnant_woman:',
   category: 'people',
@@ -1383,7 +1383,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'man_with_gua_pi_mao',
+{ title: 'man_with_gua_pi_mao_tone0',
   name: 'man with gua pi mao',
   shortname: ':man_with_gua_pi_mao:',
   category: 'people',
@@ -1419,7 +1419,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'person_frowning',
+{ title: 'person_frowning_tone0',
   name: 'person frowning',
   shortname: ':person_frowning:',
   category: 'people',
@@ -1455,7 +1455,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'person_with_pouting_face',
+{ title: 'person_with_pouting_face_tone0',
   name: 'person with pouting face',
   shortname: ':person_with_pouting_face:',
   category: 'people',
@@ -1491,7 +1491,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'no_good',
+{ title: 'no_good_tone0',
   name: 'face with no good gesture',
   shortname: ':no_good:',
   category: 'people',
@@ -1527,7 +1527,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'ok_woman',
+{ title: 'ok_woman_tone0',
   name: 'face with ok gesture',
   shortname: ':ok_woman:',
   category: 'people',
@@ -1563,7 +1563,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'information_desk_person',
+{ title: 'information_desk_person_tone0',
   name: 'information desk person',
   shortname: ':information_desk_person:',
   category: 'people',
@@ -1599,7 +1599,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'raising_hand',
+{ title: 'raising_hand_tone0',
   name: 'happy person raising one hand',
   shortname: ':raising_hand:',
   category: 'people',
@@ -1635,7 +1635,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'bow',
+{ title: 'bow_tone0',
   name: 'person bowing deeply',
   shortname: ':bow:',
   category: 'people',
@@ -1671,7 +1671,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'face_palm',
+{ title: 'face_palm_tone0',
   name: 'face palm',
   shortname: ':face_palm:',
   category: 'people',
@@ -1707,7 +1707,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'shrug',
+{ title: 'shrug_tone0',
   name: 'shrug',
   shortname: ':shrug:',
   category: 'people',
@@ -1743,7 +1743,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'massage',
+{ title: 'massage_tone0',
   name: 'face massage',
   shortname: ':massage:',
   category: 'people',
@@ -1779,7 +1779,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'haircut',
+{ title: 'haircut_tone0',
   name: 'haircut',
   shortname: ':haircut:',
   category: 'people',
@@ -1815,7 +1815,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'walking',
+{ title: 'walking_tone0',
   name: 'pedestrian',
   shortname: ':walking:',
   category: 'people',
@@ -1851,7 +1851,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'runner',
+{ title: 'runner_tone0',
   name: 'runner',
   shortname: ':runner:',
   category: 'people',
@@ -1887,7 +1887,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'dancer',
+{ title: 'dancer_tone0',
   name: 'dancer',
   shortname: ':dancer:',
   category: 'people',
@@ -1923,7 +1923,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'man_dancing',
+{ title: 'man_dancing_tone0',
   name: 'man dancing',
   shortname: ':man_dancing:',
   category: 'people',
@@ -2002,7 +2002,7 @@ const emoji = [
   category: 'activity',
   keywords: [] }
 ,
-{ title: 'horse_racing',
+{ title: 'horse_racing_tone0',
   name: 'horse racing',
   shortname: ':horse_racing:',
   category: 'activity',
@@ -2056,7 +2056,7 @@ const emoji = [
   category: 'activity',
   keywords: [ 'men', 'game', 'ball', 'vacation', 'sport', 'golf' ] }
 ,
-{ title: 'surfer',
+{ title: 'surfer_tone0',
   name: 'surfer',
   shortname: ':surfer:',
   category: 'activity',
@@ -2092,7 +2092,7 @@ const emoji = [
   category: 'activity',
   keywords: [] }
 ,
-{ title: 'rowboat',
+{ title: 'rowboat_tone0',
   name: 'rowboat',
   shortname: ':rowboat:',
   category: 'activity',
@@ -2128,7 +2128,7 @@ const emoji = [
   category: 'activity',
   keywords: [] }
 ,
-{ title: 'swimmer',
+{ title: 'swimmer_tone0',
   name: 'swimmer',
   shortname: ':swimmer:',
   category: 'activity',
@@ -2164,7 +2164,7 @@ const emoji = [
   category: 'activity',
   keywords: [] }
 ,
-{ title: 'basketball_player',
+{ title: 'basketball_player_tone0',
   name: 'person with ball',
   shortname: ':basketball_player:',
   category: 'activity',
@@ -2200,7 +2200,7 @@ const emoji = [
   category: 'activity',
   keywords: [] }
 ,
-{ title: 'lifter',
+{ title: 'lifter_tone0',
   name: 'weight lifter',
   shortname: ':lifter:',
   category: 'activity',
@@ -2243,7 +2243,7 @@ const emoji = [
   category: 'activity',
   keywords: [] }
 ,
-{ title: 'bicyclist',
+{ title: 'bicyclist_tone0',
   name: 'bicyclist',
   shortname: ':bicyclist:',
   category: 'activity',
@@ -2279,7 +2279,7 @@ const emoji = [
   category: 'activity',
   keywords: [] }
 ,
-{ title: 'mountain_bicyclist',
+{ title: 'mountain_bicyclist_tone0',
   name: 'mountain bicyclist',
   shortname: ':mountain_bicyclist:',
   category: 'activity',
@@ -2327,7 +2327,7 @@ const emoji = [
   category: 'travel',
   keywords: [ 'transportation', 'travel', 'bike' ] }
 ,
-{ title: 'cartwheel',
+{ title: 'cartwheel_tone0',
   name: 'person doing cartwheel',
   shortname: ':cartwheel:',
   category: 'activity',
@@ -2363,7 +2363,7 @@ const emoji = [
   category: 'activity',
   keywords: [] }
 ,
-{ title: 'wrestlers',
+{ title: 'wrestlers_tone0',
   name: 'wrestlers',
   shortname: ':wrestlers:',
   category: 'activity',
@@ -2399,7 +2399,7 @@ const emoji = [
   category: 'activity',
   keywords: [] }
 ,
-{ title: 'water_polo',
+{ title: 'water_polo_tone0',
   name: 'water polo',
   shortname: ':water_polo:',
   category: 'activity',
@@ -2435,7 +2435,7 @@ const emoji = [
   category: 'activity',
   keywords: [] }
 ,
-{ title: 'handball',
+{ title: 'handball_tone0',
   name: 'handball',
   shortname: ':handball:',
   category: 'activity',
@@ -2471,7 +2471,7 @@ const emoji = [
   category: 'activity',
   keywords: [] }
 ,
-{ title: 'juggling',
+{ title: 'juggling_tone0',
   name: 'juggling',
   shortname: ':juggling:',
   category: 'activity',
@@ -2681,7 +2681,7 @@ const emoji = [
   category: 'modifier',
   keywords: [] }
 ,
-{ title: 'muscle',
+{ title: 'muscle_tone0',
   name: 'flexed biceps',
   shortname: ':muscle:',
   category: 'people',
@@ -2725,7 +2725,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'selfie',
+{ title: 'selfie_tone0',
   name: 'selfie',
   shortname: ':selfie:',
   category: 'people',
@@ -2761,7 +2761,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'point_left',
+{ title: 'point_left_tone0',
   name: 'white left pointing backhand index',
   shortname: ':point_left:',
   category: 'people',
@@ -2797,7 +2797,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'point_right',
+{ title: 'point_right_tone0',
   name: 'white right pointing backhand index',
   shortname: ':point_right:',
   category: 'people',
@@ -2833,7 +2833,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'point_up',
+{ title: 'point_up_tone0',
   name: 'white up pointing index',
   shortname: ':point_up:',
   category: 'people',
@@ -2869,7 +2869,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'point_up_2',
+{ title: 'point_up_2_tone0',
   name: 'white up pointing backhand index',
   shortname: ':point_up_2:',
   category: 'people',
@@ -2905,7 +2905,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'middle_finger',
+{ title: 'middle_finger_tone0',
   name: 'reversed hand with middle finger extended',
   shortname: ':middle_finger:',
   category: 'people',
@@ -2941,7 +2941,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'point_down',
+{ title: 'point_down_tone0',
   name: 'white down pointing backhand index',
   shortname: ':point_down:',
   category: 'people',
@@ -2977,7 +2977,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'v',
+{ title: 'v_tone0',
   name: 'victory hand',
   shortname: ':v:',
   category: 'people',
@@ -3020,7 +3020,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'fingers_crossed',
+{ title: 'fingers_crossed_tone0',
   name: 'hand with first and index finger crossed',
   shortname: ':fingers_crossed:',
   category: 'people',
@@ -3056,7 +3056,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'vulcan',
+{ title: 'vulcan_tone0',
   name: 'raised hand with part between middle and ring fingers',
   shortname: ':vulcan:',
   category: 'people',
@@ -3092,7 +3092,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'metal',
+{ title: 'metal_tone0',
   name: 'sign of the horns',
   shortname: ':metal:',
   category: 'people',
@@ -3128,7 +3128,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'call_me',
+{ title: 'call_me_tone0',
   name: 'call me hand',
   shortname: ':call_me:',
   category: 'people',
@@ -3164,7 +3164,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'hand_splayed',
+{ title: 'hand_splayed_tone0',
   name: 'raised hand with fingers splayed',
   shortname: ':hand_splayed:',
   category: 'people',
@@ -3200,7 +3200,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'raised_hand',
+{ title: 'raised_hand_tone0',
   name: 'raised hand',
   shortname: ':raised_hand:',
   category: 'people',
@@ -3236,7 +3236,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'ok_hand',
+{ title: 'ok_hand_tone0',
   name: 'ok hand sign',
   shortname: ':ok_hand:',
   category: 'people',
@@ -3279,7 +3279,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'thumbsup',
+{ title: 'thumbsup_tone0',
   name: 'thumbs up sign',
   shortname: ':thumbsup:',
   category: 'people',
@@ -3324,7 +3324,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'thumbsdown',
+{ title: 'thumbsdown_tone0',
   name: 'thumbs down sign',
   shortname: ':thumbsdown:',
   category: 'people',
@@ -3360,7 +3360,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'fist',
+{ title: 'fist_tone0',
   name: 'raised fist',
   shortname: ':fist:',
   category: 'people',
@@ -3396,7 +3396,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'punch',
+{ title: 'punch_tone0',
   name: 'fisted hand sign',
   shortname: ':punch:',
   category: 'people',
@@ -3432,7 +3432,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'left_facing_fist',
+{ title: 'left_facing_fist_tone0',
   name: 'left-facing fist',
   shortname: ':left_facing_fist:',
   category: 'people',
@@ -3468,7 +3468,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'right_facing_fist',
+{ title: 'right_facing_fist_tone0',
   name: 'right-facing fist',
   shortname: ':right_facing_fist:',
   category: 'people',
@@ -3504,7 +3504,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'raised_back_of_hand',
+{ title: 'raised_back_of_hand_tone0',
   name: 'raised back of hand',
   shortname: ':raised_back_of_hand:',
   category: 'people',
@@ -3540,7 +3540,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'wave',
+{ title: 'wave_tone0',
   name: 'waving hand sign',
   shortname: ':wave:',
   category: 'people',
@@ -3576,7 +3576,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'clap',
+{ title: 'clap_tone0',
   name: 'clapping hands sign',
   shortname: ':clap:',
   category: 'people',
@@ -3612,7 +3612,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'writing_hand',
+{ title: 'writing_hand_tone0',
   name: 'writing hand',
   shortname: ':writing_hand:',
   category: 'people',
@@ -3648,7 +3648,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'open_hands',
+{ title: 'open_hands_tone0',
   name: 'open hands sign',
   shortname: ':open_hands:',
   category: 'people',
@@ -3684,7 +3684,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'raised_hands',
+{ title: 'raised_hands_tone0',
   name: 'person raising both hands in celebration',
   shortname: ':raised_hands:',
   category: 'people',
@@ -3720,7 +3720,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'pray',
+{ title: 'pray_tone0',
   name: 'person with folded hands',
   shortname: ':pray:',
   category: 'people',
@@ -3764,7 +3764,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'handshake',
+{ title: 'handshake_tone0',
   name: 'handshake',
   shortname: ':handshake:',
   category: 'people',
@@ -3800,7 +3800,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'nail_care',
+{ title: 'nail_care_tone0',
   name: 'nail polish',
   shortname: ':nail_care:',
   category: 'people',
@@ -3842,7 +3842,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'ear',
+{ title: 'ear_tone0',
   name: 'ear',
   shortname: ':ear:',
   category: 'people',
@@ -3878,7 +3878,7 @@ const emoji = [
   category: 'people',
   keywords: [] }
 ,
-{ title: 'nose',
+{ title: 'nose_tone0',
   name: 'nose',
   shortname: ':nose:',
   category: 'people',
@@ -6290,7 +6290,7 @@ const emoji = [
   category: 'objects',
   keywords: [ 'object', 'bathroom' ] }
 ,
-{ title: 'bath',
+{ title: 'bath_tone0',
   name: 'bath',
   shortname: ':bath:',
   category: 'activity',
@@ -8387,7 +8387,7 @@ const emoji = [
   category: 'symbols',
   keywords: [ 'arrow', 'symbol' ] }
 ,
-{ title: 'on',
+{ title: 'on_tone0',
   name: 'on with exclamation mark with left right arrow abo',
   shortname: ':on:',
   category: 'symbols',
@@ -8729,7 +8729,7 @@ const emoji = [
   category: 'symbols',
   keywords: [ 'object', 'symbol' ] }
 ,
-{ title: 'o',
+{ title: 'o_tone0',
   name: 'heavy large circle',
   shortname: ':o:',
   category: 'symbols',
@@ -8987,7 +8987,7 @@ const emoji = [
   category: 'symbols',
   keywords: [ 'symbol' ] }
 ,
-{ title: 'a',
+{ title: 'a_tone0',
   name: 'negative squared latin capital letter a',
   shortname: ':a:',
   category: 'symbols',
@@ -9035,7 +9035,7 @@ const emoji = [
   category: 'symbols',
   keywords: [ 'symbol' ] }
 ,
-{ title: 'm',
+{ title: 'm_tone0',
   name: 'circled latin capital letter m',
   shortname: ':m:',
   category: 'symbols',
@@ -9047,7 +9047,7 @@ const emoji = [
   category: 'symbols',
   keywords: [ 'symbol' ] }
 ,
-{ title: 'ng',
+{ title: 'ng_tone0',
   name: 'squared ng',
   shortname: ':ng:',
   category: 'symbols',
@@ -9077,7 +9077,7 @@ const emoji = [
   category: 'symbols',
   keywords: [ 'symbol' ] }
 ,
-{ title: 'up',
+{ title: 'up_tone0',
   name: 'squared up with exclamation mark',
   shortname: ':up:',
   category: 'symbols',
