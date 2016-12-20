@@ -48,12 +48,24 @@ class EmojiMenu extends Component {
 
     const modifiers = _.where(emojiList, { category: 'modifier' });
 
+    const style = {
+      modifierTone0: {
+        backgroundColor: '#ffdd67',
+        borderRadius: '50%'
+      }
+    };
+
     return (
       <section>
         <header className="emoji-container modifiers">
+          <div
+            style={style.modifierTone0}
+            className="emojione modifier"
+            onClick={() => this.changeTone('tone0')}
+          />
           {_.map(modifiers, modifier => (
             <div
-              className={'emojione modifier'}
+              className="emojione modifier"
               dangerouslySetInnerHTML={EmojiMenu.createMarkup(modifier.shortname)}
               key={`emoji-${modifier.shortname}`}
               onClick={() => this.changeTone(modifier.title)}
