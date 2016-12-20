@@ -11,7 +11,8 @@ class EmojiMenu extends Component {
   }
 
   static propTypes = {
-    svgSprites: PropTypes.string
+    svgSprites: PropTypes.string,
+    sendEmoji: PropTypes.func.isRequired
   }
 
   constructor(props) {
@@ -36,6 +37,7 @@ class EmojiMenu extends Component {
 
   render() {
     const { tone } = this.state;
+    const { sendEmoji } = this.props;
 
     const categories = [
       'people',
@@ -85,6 +87,7 @@ class EmojiMenu extends Component {
                       className={category}
                       dangerouslySetInnerHTML={EmojiMenu.createMarkup(emoji.shortname)}
                       key={`emoji-${emoji.shortname}`}
+                      onClick={() => sendEmoji(emoji)}
                     />
                   ))}
                 </section>
