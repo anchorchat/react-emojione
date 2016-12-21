@@ -1,9 +1,9 @@
 .demo {
-  padding: 2rem;
+  padding: 16px;
 }
 
 .demo h1 {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .demo > h1 {
@@ -44,7 +44,7 @@
 }
 
 .emoji-categories {
-  height: calc(100% - 50px);
+  height: calc(100% - 94px);
   overflow-y: scroll;
   padding-top: 10px;
 }
@@ -103,4 +103,14 @@ article h1 {
 
 .modifier.active {
   transform: scale(1.3);
+}
+
+footer {
+  background: #fff;
+  height: 24px;
+  padding: 10px 5px;
+}
+
+footer svg {
+  margin: 0 5px;
 }
