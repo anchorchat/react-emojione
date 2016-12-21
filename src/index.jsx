@@ -4,6 +4,7 @@ import _ from 'underscore';
 import emojis from './emoji';
 import EmojiCategory from './components/emoji-category';
 import EmojiModifiers from './components/emoji-modifiers';
+import EmojiCategories from './components/emoji-categories';
 import Storage from './storage';
 
 const storage = new Storage();
@@ -101,6 +102,7 @@ class EmojiMenu extends Component {
             );
           })}
         </section>
+        <EmojiCategories />
       </section>
     );
   }
