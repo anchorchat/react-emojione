@@ -8,39 +8,41 @@ import IconTravel from './icons/icon-travel';
 import IconObjects from './icons/icon-objects';
 import IconSymbols from './icons/icon-symbols';
 
-function EmojiCategories({ changeCategory }) {
+function EmojiCategories({ changeCategory, category, activeColor }) {
   return (
     <footer className="emoji-category-menu">
       <span onClick={() => changeCategory('recent')}>
-        <IconRecent />
+        <IconRecent color={category === 'recent' ? activeColor : null} />
       </span>
       <span onClick={() => changeCategory('people')}>
-        <IconPeople />
+        <IconPeople color={category === 'people' ? activeColor : null} />
       </span>
       <span onClick={() => changeCategory('nature')}>
-        <IconNature />
+        <IconNature color={category === 'nature' ? activeColor : null} />
       </span>
       <span onClick={() => changeCategory('food')}>
-        <IconFood />
+        <IconFood color={category === 'food' ? activeColor : null} />
       </span>
       <span onClick={() => changeCategory('activity')}>
-        <IconActivity />
+        <IconActivity color={category === 'activity' ? activeColor : null} />
       </span>
       <span onClick={() => changeCategory('travel')}>
-        <IconTravel />
+        <IconTravel color={category === 'travel' ? activeColor : null} />
       </span>
       <span onClick={() => changeCategory('objects')}>
-        <IconObjects />
+        <IconObjects color={category === 'objects' ? activeColor : null} />
       </span>
       <span onClick={() => changeCategory('symbols')}>
-        <IconSymbols />
+        <IconSymbols color={category === 'symbols' ? activeColor : null} />
       </span>
     </footer>
   );
 }
 
 EmojiCategories.propTypes = {
-  changeCategory: PropTypes.func.isRequired
+  changeCategory: PropTypes.func.isRequired,
+  category: PropTypes.string.isRequired,
+  activeColor: PropTypes.string.isRequired
 };
 
 export default EmojiCategories;

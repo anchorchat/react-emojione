@@ -12,6 +12,7 @@ const storage = new Storage();
 class EmojiMenu extends Component {
   static propTypes = {
     svgSprites: PropTypes.string,
+    activeColor: PropTypes.string,
     sendEmoji: PropTypes.func.isRequired
   }
 
@@ -64,6 +65,9 @@ class EmojiMenu extends Component {
 
   render() {
     const { tone, storedEmojis, category } = this.state;
+    const { activeColor } = this.props;
+
+    const color = activeColor || '#62B3EC';
 
     const modifiers = _.where(emojis, { category: 'modifier' });
 
@@ -98,7 +102,11 @@ class EmojiMenu extends Component {
             : null
           }
         </section>
-        <EmojiCategories changeCategory={this.changeCategory} />
+        <EmojiCategories
+          changeCategory={this.changeCategory}
+          category={category}
+          activeColor={color}
+        />
       </section>
     );
   }
