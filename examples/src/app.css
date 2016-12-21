@@ -44,9 +44,8 @@
 }
 
 .emoji-categories {
-  height: calc(100% - 94px);
+  height: calc(100% - 84px);
   overflow-y: scroll;
-  padding-top: 10px;
 }
 
 .emoji-container > div {
@@ -66,12 +65,8 @@
 
 article h1 {
   margin: 0 0 5px 10px;
-  padding-bottom: 5px;
+  padding: 10px 0;
   text-transform: capitalize;
-}
-
-.emoji-categories article {
-  margin-bottom: 10px;
 }
 
 .emoji-categories article:last-of-type {
@@ -113,4 +108,5 @@ footer {
 
 footer svg {
   margin: 0 5px;
+  cursor: pointer;
 }
