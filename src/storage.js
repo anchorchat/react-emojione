@@ -45,6 +45,10 @@ class Storage {
       value = storedEmojis;
     }
 
+    if (value.length > 42) {
+      value.pop();
+    }
+
     this.constructor.storeItem(key, value);
 
     return false;
