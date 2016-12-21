@@ -4,9 +4,7 @@
 
 Install from npm
 
-```bash
-$ npm i -S react-emojione-menu emojione
-```
+[![NPM](https://nodei.co/npm/react-emojione-menu.png)](https://nodei.co/npm/react-emojione-menu/)
 
 ### Basic Usage with png images
 
