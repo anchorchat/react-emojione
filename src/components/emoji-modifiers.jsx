@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import _ from 'underscore';
-import createMarkup from './create-markup';
+import createMarkup from '../create-markup';
 
 class EmojiModifiers extends Component {
   static propTypes = {

@@ -2,8 +2,8 @@ import React, { Component, PropTypes } from 'react';
 import emojione from 'emojione';
 import _ from 'underscore';
 import emojis from './emoji';
-import EmojiCategory from './emoji-category';
-import EmojiModifiers from './emoji-modifiers';
+import EmojiCategory from './components/emoji-category';
+import EmojiModifiers from './components/emoji-modifiers';
 import Storage from './storage';
 
 const storage = new Storage();
