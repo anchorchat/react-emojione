@@ -44,7 +44,7 @@ function MyComponent() {
   return (
     <EmojiMenu
       sendEmoji={sendEmoji}
-      svgSprites="/emojione.svg"
+      svgSprites="/pathToSpriteSheet.svg"
     />
   );
 }
@@ -52,6 +52,7 @@ function MyComponent() {
 
 See emojione's [documentation](http://git.emojione.com/demos/latest/sprites-svg.html) on using svg sprites and download link for the sprites.
 
+The default color for active categories is `'#62B3EC'`, you can change this by passing your color as `activeColor` to `<EmojiMenu />`.
 
 ## Installation
 
