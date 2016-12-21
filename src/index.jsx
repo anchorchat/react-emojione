@@ -28,16 +28,24 @@ class EmojiMenu extends Component {
 
     this.state = {
       tone: 'tone0',
-      storedEmojis: storedEmojis || []
+      storedEmojis: storedEmojis || [],
+      category: 'people'
     };
 
     this.changeTone = this.changeTone.bind(this);
+    this.changeCategory = this.changeCategory.bind(this);
     this.sendEmoji = this.sendEmoji.bind(this);
   }
 
   changeTone(tone) {
     this.setState({
       tone
+    });
+  }
+
+  changeCategory(category) {
+    this.setState({
+      category
     });
   }
 
@@ -55,27 +63,24 @@ class EmojiMenu extends Component {
   }
 
   render() {
-    const { tone, storedEmojis } = this.state;
-
-    const categories = [
-      'people',
-      'nature',
-      'food',
-      'activity',
-      'travel',
-      'objects',
-      'flags',
-      'symbols'
-    ];
+    const { tone, storedEmojis, category } = this.state;
 
     const modifiers = _.where(emojis, { category: 'modifier' });
+
+    const filteredEmoji = _.chain(emojis).where({ category }).filter((emoji) => {
+      if (emoji.title.includes('tone')) {
+        return emoji.title.includes(tone);
+      }
+
+      return true;
+    }).value();
 
     return (
       <section className="emoji-menu">
         <EmojiModifiers modifiers={modifiers} changeTone={this.changeTone} tone={tone} />
         <section className="emoji-categories">
           {
-            storedEmojis.length > 0
+            storedEmojis.length > 0 && category === 'recent'
             ? <EmojiCategory
               emojis={storedEmojis}
               category="recent"
@@ -83,26 +88,17 @@ class EmojiMenu extends Component {
             />
             : null
           }
-          {_.map(categories, (category) => {
-            const filteredEmoji = _.chain(emojis).where({ category }).filter((emoji) => {
-              if (emoji.title.includes('tone')) {
-                return emoji.title.includes(tone);
-              }
-
-              return true;
-            }).value();
-
-            return (
-              <EmojiCategory
-                key={category}
-                emojis={filteredEmoji}
-                category={category}
-                sendEmoji={this.sendEmoji}
-              />
-            );
-          })}
+          {
+            category !== 'recent'
+            ? <EmojiCategory
+              emojis={filteredEmoji}
+              category={category}
+              sendEmoji={this.sendEmoji}
+            />
+            : null
+          }
         </section>
-        <EmojiCategories />
+        <EmojiCategories changeCategory={this.changeCategory} />
       </section>
     );
   }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import IconRecent from './icons/icon-recent';
 import IconPeople from './icons/icon-people';
 import IconNature from './icons/icon-nature';
@@ -8,35 +8,39 @@ import IconTravel from './icons/icon-travel';
 import IconObjects from './icons/icon-objects';
 import IconSymbols from './icons/icon-symbols';
 
-function EmojiCategories() {
+function EmojiCategories({ changeCategory }) {
   return (
     <footer className="emoji-category-menu">
-      <a href="#recent">
+      <span onClick={() => changeCategory('recent')}>
         <IconRecent />
-      </a>
-      <a href="#people">
+      </span>
+      <span onClick={() => changeCategory('people')}>
         <IconPeople />
-      </a>
-      <a href="#nature">
+      </span>
+      <span onClick={() => changeCategory('nature')}>
         <IconNature />
-      </a>
-      <a href="#food">
+      </span>
+      <span onClick={() => changeCategory('food')}>
         <IconFood />
-      </a>
-      <a href="#activity">
+      </span>
+      <span onClick={() => changeCategory('activity')}>
         <IconActivity />
-      </a>
-      <a href="#travel">
+      </span>
+      <span onClick={() => changeCategory('travel')}>
         <IconTravel />
-      </a>
-      <a href="#objects">
+      </span>
+      <span onClick={() => changeCategory('objects')}>
         <IconObjects />
-      </a>
-      <a href="#symbols">
+      </span>
+      <span onClick={() => changeCategory('symbols')}>
         <IconSymbols />
-      </a>
+      </span>
     </footer>
   );
 }
+
+EmojiCategories.propTypes = {
+  changeCategory: PropTypes.func.isRequired
+};
 
 export default EmojiCategories;
