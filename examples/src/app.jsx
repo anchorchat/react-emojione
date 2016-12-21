@@ -43,7 +43,7 @@ class App extends Component {
           </a>
         </h1>
         <div dangerouslySetInnerHTML={App.createMarkup(this.state.emoji)} />
-        <EmojiMenu svgSprites="/emojione.svg" sendEmoji={this.sendEmoji} />
+        <EmojiMenu svgSprites="/emojione.svg" sendEmoji={this.sendEmoji} activeColor="#62B3EC" />
       </section>
     );
   }
