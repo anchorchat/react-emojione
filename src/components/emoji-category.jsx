@@ -22,7 +22,7 @@ class EmojiCategory extends Component {
 
     return (
       <article>
-        <h1>{category}</h1>
+        <h1 id={category}>{category}</h1>
         <section className="emoji-container">
           {_.map(emojis, emoji => (
             <div

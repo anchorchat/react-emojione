@@ -11,14 +11,30 @@ import IconSymbols from './icons/icon-symbols';
 function EmojiCategories() {
   return (
     <footer className="emoji-category-menu">
-      <IconRecent />
-      <IconPeople />
-      <IconNature />
-      <IconFood />
-      <IconActivity />
-      <IconTravel />
-      <IconObjects />
-      <IconSymbols />
+      <a href="#recent">
+        <IconRecent />
+      </a>
+      <a href="#people">
+        <IconPeople />
+      </a>
+      <a href="#nature">
+        <IconNature />
+      </a>
+      <a href="#food">
+        <IconFood />
+      </a>
+      <a href="#activity">
+        <IconActivity />
+      </a>
+      <a href="#travel">
+        <IconTravel />
+      </a>
+      <a href="#objects">
+        <IconObjects />
+      </a>
+      <a href="#symbols">
+        <IconSymbols />
+      </a>
     </footer>
   );
 }
