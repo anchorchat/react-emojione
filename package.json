@@ -1,5 +1,5 @@
 {
-  "name": "react-emojione",
+  "name": "react-emojione-menu",
   "version": "1.0.0",
   "description": "Emoji menu with React and emojione",
   "main": "dist/index.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anchorchat/react-emojione.git"
+    "url": "git+https://github.com/anchorchat/react-emojione-menu.git"
   },
   "keywords": [
     "react",
@@ -25,9 +25,9 @@
   "author": "Sjaak Luthart",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/anchorchat/react-emojione/issues"
+    "url": "https://github.com/anchorchat/react-emojione-menu/issues"
   },
-  "homepage": "https://github.com/anchorchat/react-emojione#readme",
+  "homepage": "https://github.com/anchorchat/react-emojione-menu#readme",
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-eslint": "^7.1.1",
