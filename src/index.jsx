@@ -13,7 +13,8 @@ class EmojiMenu extends Component {
   static propTypes = {
     svgSprites: PropTypes.string,
     activeColor: PropTypes.string,
-    sendEmoji: PropTypes.func.isRequired
+    sendEmoji: PropTypes.func.isRequired,
+    toggleButton: PropTypes.element
   }
 
   constructor(props) {
@@ -65,7 +66,7 @@ class EmojiMenu extends Component {
 
   render() {
     const { tone, storedEmojis, category } = this.state;
-    const { activeColor } = this.props;
+    const { activeColor, toggleButton } = this.props;
 
     const color = activeColor || '#62B3EC';
 
@@ -81,7 +82,12 @@ class EmojiMenu extends Component {
 
     return (
       <section className="emoji-menu">
-        <EmojiModifiers modifiers={modifiers} changeTone={this.changeTone} tone={tone} />
+        <EmojiModifiers
+          modifiers={modifiers}
+          changeTone={this.changeTone}
+          tone={tone}
+          toggleButton={toggleButton}
+        />
         <section className="emoji-categories">
           {
             storedEmojis.length > 0 && category === 'recent'

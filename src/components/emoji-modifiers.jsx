@@ -11,7 +11,8 @@ class EmojiModifiers extends Component {
       })
     ),
     changeTone: PropTypes.func.isRequired,
-    tone: PropTypes.string.isRequired
+    tone: PropTypes.string.isRequired,
+    toggleButton: PropTypes.element
   }
 
   shouldComponentUpdate(nextProps) {
@@ -19,7 +20,7 @@ class EmojiModifiers extends Component {
   }
 
   render() {
-    const { modifiers, changeTone, tone } = this.props;
+    const { modifiers, changeTone, tone, toggleButton } = this.props;
 
     return (
       <header className="emoji-container modifiers">
@@ -39,6 +40,7 @@ class EmojiModifiers extends Component {
             onClick={() => changeTone(modifier.title)}
           />
         ))}
+        {toggleButton}
       </header>
     );
   }
