@@ -112,6 +112,7 @@ class EmojiMenu extends Component {
           changeCategory={this.changeCategory}
           category={category}
           activeColor={color}
+          recent={storedEmojis.length > 0}
         />
       </section>
     );

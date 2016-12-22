@@ -10,18 +10,29 @@ import IconObjects from './icons/icon-objects';
 import IconSymbols from './icons/icon-symbols';
 
 class EmojiCategories extends Component {
+  static propTypes = {
+    changeCategory: PropTypes.func.isRequired,
+    category: PropTypes.string.isRequired,
+    activeColor: PropTypes.string.isRequired,
+    recent: PropTypes.bool.isRequired
+  }
+
   shouldComponentUpdate(nextProps) {
     return !_.isEqual(this.props, nextProps);
   }
 
   render() {
-    const { changeCategory, category, activeColor } = this.props;
+    const { changeCategory, category, activeColor, recent } = this.props;
 
     return (
       <footer className="emoji-category-menu">
-        <span onClick={() => changeCategory('recent')}>
-          <IconRecent color={category === 'recent' ? activeColor : null} />
-        </span>
+        {
+          recent
+          ? <span onClick={() => changeCategory('recent')}>
+            <IconRecent color={category === 'recent' ? activeColor : null} />
+          </span>
+          : null
+        }
         <span onClick={() => changeCategory('people')}>
           <IconPeople color={category === 'people' ? activeColor : null} />
         </span>
@@ -47,11 +58,5 @@ class EmojiCategories extends Component {
     );
   }
 }
-
-EmojiCategories.propTypes = {
-  changeCategory: PropTypes.func.isRequired,
-  category: PropTypes.string.isRequired,
-  activeColor: PropTypes.string.isRequired
-};
 
 export default EmojiCategories;
