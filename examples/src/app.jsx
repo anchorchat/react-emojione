@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import emojione from 'emojione';
-import EmojiMenu from '../../dist/index';
+import EmojiMenu from 'react-emojione-menu';
 import './app.css';
 
 emojione.imageType = 'svg';

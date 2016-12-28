@@ -48,19 +48,15 @@
   overflow-y: scroll;
 }
 
-.emoji-container > div {
-  width: 40px;
-  height: 40px;
-  margin: 5px;
+.emoji-container div {
+  height: 100%;
 }
 
-.emoji-container.modifiers {
-  display: block;
-  text-align: right;
-}
-
-.emoji-container.modifiers > div {
-  display: inline-block;
+.modifiers-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%; /* adjust this to calc(100% - buttonWidth) to fit the button */
+  overflow-x: auto;
 }
 
 article h1 {
@@ -70,10 +66,6 @@ article h1 {
   text-transform: capitalize;
 }
 
-.emoji-categories article:last-of-type {
-  margin-bottom: 0;
-}
-
 .demo > div .emojione {
   width: 150px;
   height: 150px;
@@ -81,11 +73,7 @@ article h1 {
 
 .modifiers {
   background: #fff;
-}
-
-.emoji-container > div.modifier {
-  width: 30px;
-  height: 30px;
+  height: 40px;
 }
 
 .modifier .emojione {
@@ -94,7 +82,16 @@ article h1 {
 }
 
 .modifier {
+  display: flex;
   transition: transform .3s ease-in-out;
+}
+
+.modifier:first-of-type {
+  margin-left: 5px;
+}
+
+.modifier > svg {
+  align-self: center;
 }
 
 .modifier.active {
