@@ -3,3 +3,4 @@
 dist
 test
 emoji.js
+string-includes-polyfill.js
