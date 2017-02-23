@@ -6,6 +6,7 @@ import EmojiCategory from './components/emoji-category';
 import EmojiModifiers from './components/emoji-modifiers';
 import EmojiCategories from './components/emoji-categories';
 import Storage from './storage';
+import './string-includes-polyfill';
 
 const storage = new Storage();
 
